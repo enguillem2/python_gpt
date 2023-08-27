@@ -1,6 +1,7 @@
 import openai
+from decouple import config
 
-openai.api_key="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"
+openai.api_key=config("OPEN_AI_API_KEY")
 chat_history=[]
 
 
